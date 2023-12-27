@@ -1,0 +1,135 @@
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.header{
+  background-color: #2a305c;
+}
+
+.logo{
+  margin: 15px;
+  margin-left: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+.contenedor_titulo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.tituloEstilo {
+  margin-top: 0;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin: 15px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  
+}
+
+.subtitulo {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  margin: 15px;
+  margin-bottom: 50px;
+  letter-spacing: 0.1em;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  margin: 1rem;
+}
+
+.nav-link:hover {
+  color: #696e8d;
+}
+
+.contenedor_titulo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenedor_imagen{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  border-bottom: solid #828084;
+  
+}
+
+.carousel{
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.contenedor_card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 18em;
+  margin: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  border: solid 2.5px #828084;
+  color: #000000;
+  text-align: center;
+}
+
+.btn{
+  background-color: #696e8d;
+  color: white;
+}
+
+.contenedor_cart{
+  background-color: whitesmoke;
+  height: 3rem;
+}
+
+.contenedor_carrito{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.carrito {
+  width: 1.5rem;
+  margin: 15px;
+}
+
+#carrito {
+  text-decoration: none;
+}
+
+.contar_productos {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
