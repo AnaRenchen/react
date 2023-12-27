@@ -3,13 +3,13 @@ import Logo from "./Logo";
 const NavBar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-md">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">
+      <nav className="navbar navbar-expand-md">
+        <div className="container">
+          <a className="navbar-brand" href="./index.html">
             <Logo size={30} />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -17,17 +17,17 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./html/shop.html">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link" href="./html/shop.html">
                   Shop
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./html/contacto.html">
+              <li className="nav-item">
+                <a className="nav-link" href="./html/contacto.html">
                   Contact
                 </a>
               </li>

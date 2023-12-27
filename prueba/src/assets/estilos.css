@@ -10,8 +10,6 @@ body {
 }
 
 .logo{
-  margin: 15px;
-  margin-left: 30px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -23,17 +21,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
 }
 
 .tituloEstilo {
-  margin-top: 0;
   color: black;
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
-  margin: 15px;
+  margin: 2rem;
   letter-spacing: 0.2em;
-  text-align: center;
-  
 }
 
 .subtitulo {
@@ -41,7 +37,6 @@ body {
   text-align: center;
   font-size: 1.5rem;
   color: black;
-  margin: 15px;
   margin-bottom: 50px;
   letter-spacing: 0.1em;
 }
@@ -58,12 +53,6 @@ body {
 
 .nav-link:hover {
   color: #696e8d;
-}
-
-.contenedor_titulo{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .contenedor_imagen{
@@ -102,6 +91,11 @@ body {
   color: white;
 }
 
+.btn:hover{
+background-color: #828084;
+color: white;
+}
+
 .contenedor_cart{
   background-color: whitesmoke;
   height: 3rem;
@@ -131,5 +125,22 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.contenedor_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2a305c;
+  height: 10em;
+  margin-top: 20px;
+
+ 
+}
+
+.texto_footer{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px;
 }
 
