@@ -28,17 +28,8 @@ body {
   color: black;
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
-  margin: 2rem;
+  margin: 3rem;
   letter-spacing: 0.2em;
-}
-
-.subtitulo {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 50px;
-  letter-spacing: 0.1em;
 }
 
 
@@ -71,11 +62,21 @@ body {
   margin-bottom: 50px;
 }
 
+.subtitulo_seccion {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.8rem;
+  color: black;
+  margin: 3rem;
+  letter-spacing: 0.1em;
+}
+
 .contenedor_card{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .card {
   width: 18em;
@@ -127,15 +128,86 @@ color: white;
   border-radius: 50%;
 }
 
+.seccion_profile{
+  margin-top: 100px;
+  background-color:#3f446c;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.contendor_profile{
+  display: grid;
+  grid-template-columns: 50% 80%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "texto1 foto" "texto2 foto";
+}
+
+.texto_profile{
+  font-family: 'Times New Roman', Times, serif;
+  grid-area: texto1;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 50px;
+}
+
+.profile_foto{
+  width: 60%;
+  grid-area: foto;
+  justify-items: center;
+  align-self: center;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+
+.contact_info{
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text_contact{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.logo_insta{
+  width: 3rem;
+  margin: 50px;
+}
+
+.logo_dire{
+  width: 3rem;
+}
+
+.logos{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
 .contenedor_footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #2a305c;
-  height: 10em;
+  background-color: #3f446c;
   margin-top: 20px;
-
- 
 }
 
 .texto_footer{
@@ -144,3 +216,31 @@ color: white;
   margin: 20px;
 }
 
+@media (max-width: 905px) {
+
+  .contact{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logos{
+    margin:15px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .contendor_profile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .profile_foto {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+}
