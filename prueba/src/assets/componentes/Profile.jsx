@@ -4,15 +4,15 @@ const Profile = () => {
   return (
     <div className="contendor_profile">
       <p className="texto_profile">
-        Santu Horisada estudió desde temprana edad 1 año de dibujo, 4 años de
-        manga y 1 año de sumi-e. Comenzó a tatuar en el 2007. Su trabajo se
-        caracteriza por tener un gran contenido de simbología, fruto de su
-        interés personal por la historia de Asia, que abarca desde mitología,
-        budismo, shinto, leyendas, novelas, guerras, folclore japonés, entre
-        otros. La búsqueda de su trabajo es mantener lo rico de la cultura del
-        tatuaje japonés tradicional sin desviarse demasiado, pero también
-        aportando su propia visión del tatuaje, de acuerdo con su estudio tanto
-        por investigación en libros, como por sus viajes a Japón.
+        Santu Horisada studied from an early age 1 year of drawing, 4 years of
+        manga and 1 year of sumi-e. He started tattooing in 2007. His work is
+        characterized by having a great content of symbology, the result of its
+        his personal interest in the history of Asia, which ranges from
+        mythology, Buddhism, Shinto, legends, novels, wars, Japanese folklore,
+        among others. The pursuit of his work is to maintain the richness of the
+        culture of the traditional Japanese tattoo without deviating too much,
+        but also imparting his own vision of tattooing, according to his studies
+        both from research in books, as well as from his trips to Japan.
       </p>
       <img className="profile_foto" src={FotoProfile} alt="" />
     </div>

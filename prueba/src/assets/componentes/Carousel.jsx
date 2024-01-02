@@ -2,6 +2,8 @@ import Titulo from "./Titulo";
 import KintaroKoi from "../imagenes/kintaro_koi.jpg";
 import Fenix from "../imagenes/fenix.jpg";
 import Orochimaru from "../imagenes/orochimaru.jpg";
+import MascaraPelos from "../imagenes/mascara_pelos.jpg";
+import Sunade from "../imagenes/sunade.jpg";
 
 const Carousel = () => {
   return (
@@ -21,6 +23,12 @@ const Carousel = () => {
           </div>
           <div className="carousel-item">
             <img src={Fenix} class="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={Sunade} class="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={MascaraPelos} class="d-block w-100" alt="..." />
           </div>
         </div>
         <button

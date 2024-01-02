@@ -148,7 +148,7 @@ color: white;
   font-size: 1.1rem;
   color: white;
   letter-spacing: 0.1em;
-  line-height: 1.5;
+  line-height: 1.7;
   text-align: justify;
   margin: 50px;
 }
@@ -166,25 +166,25 @@ color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   margin-left: 80px;
   margin-right: 80px;
 }
 
 
-
 .contact_info{
-    width: 400px;
+    width: 450px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .text_contact{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
   color: #333333;
+  line-height: 1.7;
 }
 
 .logo_insta{
