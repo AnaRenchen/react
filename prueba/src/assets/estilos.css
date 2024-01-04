@@ -232,9 +232,10 @@ color: white;
 
   .contendor_profile {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
+
 
   .profile_foto {
     margin-top: 30px;

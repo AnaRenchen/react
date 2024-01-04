@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div className="contenedor_card">
       <div className="card">
-        <img src={Orochimaru} class="card-img-top" alt="..." />
+        <img src={Orochimaru} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Orochimaru 大蛇丸 </h5>
           <p className="card-text"> A3 Size</p>
@@ -17,7 +17,7 @@ const Card = () => {
         </div>
       </div>
       <div className="card">
-        <img src={KintaroKoi} class="card-img-top" alt="..." />
+        <img src={KintaroKoi} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Kintaro to Koi 金太郎と鯉</h5>
           <p className="card-text"> A3 Size</p>
@@ -28,7 +28,7 @@ const Card = () => {
         </div>
       </div>
       <div className="card">
-        <img src={Fenix} class="card-img-top" alt="..." />
+        <img src={Fenix} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Hou-oo 鳳凰</h5>
           <p className="card-text">A3 Size</p>

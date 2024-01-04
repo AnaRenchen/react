@@ -11,24 +11,24 @@ const Carousel = () => {
       <Titulo />
       <div
         id="carouselExampleAutoplaying"
-        class="carousel slide col-lg-6 col-md-12 col-sm-12"
+        className="carousel slide col-lg-6 col-md-12 col-sm-12"
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={KintaroKoi} class="d-block w-100" alt="..." />
+            <img src={KintaroKoi} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Orochimaru} class="d-block w-100" alt="..." />
+            <img src={Orochimaru} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Fenix} class="d-block w-100" alt="..." />
+            <img src={Fenix} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={Sunade} class="d-block w-100" alt="..." />
+            <img src={Sunade} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={MascaraPelos} class="d-block w-100" alt="..." />
+            <img src={MascaraPelos} className="d-block w-100" alt="..." />
           </div>
         </div>
         <button
