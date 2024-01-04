@@ -1,10 +1,10 @@
 import "./App.css";
-import Carousel from "./assets/componentes/Carousel";
-import Header from "./assets/componentes/Header";
-import SeccionProductos from "./assets/componentes/SeccionProductos";
-import Footer from "./assets/componentes/Footer";
-import SeccionContacto from "./assets/componentes/SeccionContacto";
-import SeccionProfile from "./assets/componentes/SeccionProfile";
+import Carousel from "../src/assets/components/Carousel";
+import Header from "../src/assets/components/Header";
+import SeccionProductos from "../src/assets/components/SeccionProductos";
+import Footer from "../src/assets/components/Footer";
+import SeccionProfile from "../src/assets/components/SeccionProfile";
+import SeccionContacto from "../src/assets/components/SeccionContacto";
 
 function App() {
   return (

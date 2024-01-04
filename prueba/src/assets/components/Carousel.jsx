@@ -1,4 +1,4 @@
-import Titulo from "./Titulo";
+import Titulo from "../components/Titulo";
 import KintaroKoi from "../imagenes/kintaro_koi.jpg";
 import Fenix from "../imagenes/fenix.jpg";
 import Orochimaru from "../imagenes/orochimaru.jpg";
@@ -8,7 +8,7 @@ import Sunade from "../imagenes/sunade.jpg";
 const Carousel = () => {
   return (
     <div className="contenedor_imagen">
-      <Titulo />
+      <Titulo shopName="Horisada 彫定" />
       <div
         id="carouselExampleAutoplaying"
         className="carousel slide col-lg-6 col-md-12 col-sm-12"

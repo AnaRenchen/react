@@ -1,5 +1,5 @@
-import Subtitulo from "./Subtitulo";
-import Profile from "./Profile";
+import Subtitulo from "../components/Subtitulo";
+import Profile from "../components/Profile";
 
 const SeccionProfile = () => {
   const colorSubtitulo = "#ffffff";

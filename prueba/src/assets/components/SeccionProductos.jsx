@@ -1,5 +1,5 @@
-import Card from "./Card";
-import Subtitulo from "./Subtitulo";
+import Card from "../components/Card";
+import Subtitulo from "../components/Subtitulo";
 
 const SeccionProductos = () => {
   const colorSubtitulo = "#333333";
