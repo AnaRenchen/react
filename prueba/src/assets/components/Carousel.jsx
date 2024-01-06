@@ -4,11 +4,16 @@ import Fenix from "../imagenes/fenix.jpg";
 import Orochimaru from "../imagenes/orochimaru.jpg";
 import MascaraPelos from "../imagenes/mascara_pelos.jpg";
 import Sunade from "../imagenes/sunade.jpg";
+import ItemListContainer from "./ItemListContainer";
 
 const Carousel = () => {
   return (
     <div className="contenedor_imagen">
-      <Titulo shopName="Horisada 彫定" />
+      <Titulo shopName={"Horisada 彫定"} />
+      <ItemListContainer
+        greetingJapan={"いらっしゃいませ!"}
+        greetingEnglish={"Welcome!"}
+      />
       <div
         id="carouselExampleAutoplaying"
         className="carousel slide col-lg-6 col-md-12 col-sm-12"

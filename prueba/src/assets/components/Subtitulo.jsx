@@ -1,4 +1,4 @@
-const Subtitulo = ({ contenido, color }) => {
+const Subtitulo = ({ contenido, color, id }) => {
   let border =
     contenido == "Profile"
       ? {
@@ -10,7 +10,11 @@ const Subtitulo = ({ contenido, color }) => {
       : { borderBottom: "none" };
 
   return (
-    <h2 className="subtitulo_seccion" style={{ color: color, ...border }}>
+    <h2
+      className="subtitulo_seccion"
+      id={id}
+      style={{ color: color, ...border }}
+    >
       {contenido}
     </h2>
   );

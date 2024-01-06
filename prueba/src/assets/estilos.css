@@ -24,6 +24,22 @@ body {
   text-align: center;
 }
 
+.estiloTitulo {
+  color: #333333;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin: 2rem;
+  letter-spacing: 0.2em;
+}
+
+.greeting {
+  color: #333333;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  letter-spacing: 0.2em;
+}
 
 .nav-link {
   color: white;
@@ -36,6 +52,16 @@ body {
 
 .nav-link:hover {
   color: #696e8d;
+}
+
+.dropdown-menu{
+  background-color: #2a305c;
+}
+
+.dropdown-item {
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.2em;
+  color: white;
 }
 
 .contenedor_imagen{
@@ -90,7 +116,7 @@ color: white;
 
 .contenedor_cart{
   background-color: white;
-  height: 3rem;
+  height: 4rem;
 }
 
 .contenedor_carrito{
@@ -101,23 +127,15 @@ color: white;
   align-items: center;
 }
 
-.carrito {
-  width: 1.5rem;
+.btnCart {
   margin: 15px;
+  background-color: white;
 }
 
-#carrito {
-  text-decoration: none;
+.btnCart:hover {
+  background-color: #AEADB0;
 }
 
-.contar_productos {
-  text-decoration: none;
-  text-align: center;
-  color: #333333;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
 
 .seccion_profile{
   margin-top: 100px;

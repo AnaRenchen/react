@@ -21,13 +21,36 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#shop">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#shop"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Shop
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#shop">
+                      All Paintings
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#shop">
+                      Characters
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#shop">
+                      Nature and Mythological Animals
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contacto">
+                <a className="nav-link" href="#profile">
                   Profile
                 </a>
               </li>
