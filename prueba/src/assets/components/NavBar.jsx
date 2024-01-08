@@ -39,12 +39,12 @@ const NavBar = () => {
                   </li>
                   <li>
                     <a class="dropdown-item" href="#shop">
-                      Characters
+                      - Characters
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#shop">
-                      Nature and Mythological Animals
+                      - Nature and Mythological Animals
                     </a>
                   </li>
                 </ul>
