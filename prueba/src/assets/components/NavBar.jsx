@@ -21,9 +21,9 @@ const NavBar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#shop"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -31,19 +31,19 @@ const NavBar = () => {
                 >
                   Shop
                 </a>
-                <ul class="dropdown-menu">
+                <ul className="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#shop">
+                    <a className="dropdown-item" href="#shop">
                       All Paintings
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#shop">
+                    <a className="dropdown-item" href="#shop">
                       - Characters
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#shop">
+                    <a className="dropdown-item" href="#shop">
                       - Nature and Mythological Animals
                     </a>
                   </li>

@@ -14,24 +14,13 @@ const SeccionProductos = () => {
         id="shop"
       />
       <div className="contenedor_card">
-        <Card
-          name={"Orochimaru 大蛇丸"}
-          image={Orochimaru}
-          price={"$300"}
-          disponibilidad={"1 available"}
-        />
+        <Card name={"Orochimaru 大蛇丸"} image={Orochimaru} price={"$300"} />
         <Card
           name={"Kintaro to Koi 金太郎と鯉"}
           image={KintaroKoi}
           price={"$450"}
-          disponibilidad={"1 available"}
         />
-        <Card
-          name={"Hou-oo 鳳凰"}
-          image={Fenix}
-          price={"$350"}
-          disponibilidad={"1 available"}
-        />
+        <Card name={"Hou-oo 鳳凰"} image={Fenix} price={"$350"} />
       </div>
     </div>
   );

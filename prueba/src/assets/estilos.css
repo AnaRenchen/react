@@ -104,14 +104,48 @@ body {
   text-align: center;
 }
 
-.btn{
+.btn_shop{
+  background-color: #696e8d;
+  color: white;
+  width: 100px;
+}
+
+.btn_shop:hover{
+background-color: #828084;
+color: white;
+}
+
+.counter{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.btn_cantidad{
   background-color: #696e8d;
   color: white;
 }
 
-.btn:hover{
-background-color: #828084;
-color: white;
+.btn_cantidad:hover{
+  background-color: #828084;
+  color: white;
+  }
+
+.cantidad_producto{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 5px;
+  color: #333333;
 }
 
 .contenedor_cart{
