@@ -104,6 +104,11 @@ body {
   text-align: center;
 }
 
+.card-title{
+  font-size: 1.2rem;
+  
+}
+
 .btn_shop{
   background-color: #696e8d;
   color: white;
