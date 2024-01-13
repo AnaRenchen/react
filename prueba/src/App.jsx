@@ -5,6 +5,7 @@ import Footer from "../src/assets/components/Footer";
 import SeccionProfile from "../src/assets/components/SeccionProfile";
 import SeccionContacto from "../src/assets/components/SeccionContacto";
 import ItemListContainer from "./assets/components/ItemListContainer";
+import Flecha from "./assets/components/Flecha";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ItemListContainer />
       <SeccionProfile />
       <SeccionContacto />
+      <Flecha />
       <Footer />
     </>
   );

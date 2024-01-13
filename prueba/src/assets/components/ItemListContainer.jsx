@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../asyncMock";
 import Subtitulo from "./Subtitulo";
-import ItemList from "./ItemList";
+import ItemLista from "./ItemLista";
 
 const ItemListContainer = () => {
   const colorSubtitulo = "#333333";
@@ -22,7 +22,7 @@ const ItemListContainer = () => {
         id="shop"
       />
       <div className="contenedor_card">
-        <ItemList products={products} />
+        <ItemLista products={products} />
       </div>
     </div>
   );

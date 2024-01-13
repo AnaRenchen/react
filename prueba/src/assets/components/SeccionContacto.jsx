@@ -1,6 +1,7 @@
 import Instagram from "../imagenes/instagram_logo.png";
 import LogoDireccion from "../imagenes/dire_grande.png";
 import Subtitulo from "../components/Subtitulo";
+
 const SeccionContacto = () => {
   const colorSubtitulo = "#333333";
   return (

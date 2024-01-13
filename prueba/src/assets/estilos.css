@@ -40,6 +40,20 @@ body {
   margin: 1rem;
   letter-spacing: 0.2em;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.greeting {
+  animation: fadeIn 0.8s ease-in-out;
+}
 
 .nav-link {
   color: white;
@@ -99,13 +113,14 @@ body {
   width: 18em;
   margin: 50px;
   font-family: 'Times New Roman', Times, serif;
-  border: solid 2.5px #828084;
+  border: solid 2px #828084;
+  border-radius: 7px;
   color: #333333;
   text-align: center;
 }
 
 .card-title{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   
 }
 
@@ -253,9 +268,21 @@ color: white;
 .contenedor_footer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
   background-color: #3f446c;
   margin-top: 20px;
+}
+
+.flecha{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.logo_flecha{
+  width: 5rem;
 }
 
 .texto_footer{
