@@ -1,5 +1,3 @@
-import ItemCount from "./ItemCount";
-
 const Item = ({ id, name, img, price, stock }) => {
   return (
     <div className="card">
@@ -9,11 +7,6 @@ const Item = ({ id, name, img, price, stock }) => {
         <p className="card-text"> Stock available: {stock}</p>
         <p className="card-text"> ${price} </p>
         <button className="btn btn_shop">See more</button>
-        <ItemCount
-          initial={1}
-          stock={stock}
-          onAdd={(cantidad) => console.log("Cantidad Agregada:", cantidad)}
-        />
       </div>
     </div>
   );

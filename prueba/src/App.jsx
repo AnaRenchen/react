@@ -6,6 +6,7 @@ import SeccionProfile from "../src/assets/components/SeccionProfile";
 import SeccionContacto from "../src/assets/components/SeccionContacto";
 import ItemListContainer from "./assets/components/ItemListContainer";
 import Flecha from "./assets/components/Flecha";
+import ItemDetailContainer from "./assets/components/ItemDetailContainer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Carousel />
       <ItemListContainer />
+      <ItemDetailContainer />
       <SeccionProfile />
       <SeccionContacto />
       <Flecha />

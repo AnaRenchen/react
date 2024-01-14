@@ -21,9 +21,7 @@ const ItemListContainer = () => {
         color={colorSubtitulo}
         id="shop"
       />
-      <div className="contenedor_card">
-        <ItemLista products={products} />
-      </div>
+      <ItemLista products={products} />
     </div>
   );
 };
