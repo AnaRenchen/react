@@ -13,11 +13,7 @@ const ItemDetailContainer = () => {
       .catch((error) => console.error(error, "Product not found"));
   }, []);
 
-  return (
-    <div class="detail_container">
-      <ItemDetail {...product} />
-    </div>
-  );
+  return <ItemDetail {...product} />;
 };
 
 export default ItemDetailContainer;
