@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: white;
 }
+
 .header{
   background-color: #2a305c;
 }
@@ -15,44 +16,6 @@ body {
 
 .logo:hover {
   transform: scale(1.08);
-}
-
-.contenedor_titulo{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-}
-
-.estiloTitulo {
-  color: #333333;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 3rem;
-  margin: 2rem;
-  letter-spacing: 0.2em;
-}
-
-.greeting {
-  color: #333333;
-  text-align: center;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  margin: 1rem;
-  letter-spacing: 0.2em;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.greeting {
-  animation: fadeIn 0.8s ease-in-out;
 }
 
 .nav-link {
@@ -78,6 +41,63 @@ body {
   color: white;
 }
 
+.contenedor_cart{
+  background-color: white;
+  height: 4rem;
+}
+
+.contenedor_carrito{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.btnCart {
+  margin: 15px;
+  background-color: white;
+}
+
+.btnCart:hover {
+  background-color: #AEADB0;
+}
+
+.contenedor_titulo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.estiloTitulo {
+  color: #333333;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin: 2rem;
+  letter-spacing: 0.2em;
+}
+
+.greeting {
+  color: #333333;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  letter-spacing: 0.2em;
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .contenedor_imagen{
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +106,6 @@ body {
   margin: 20px;
   align-items: center;
   border-bottom: solid #828084;
-  
 }
 
 .carousel{
@@ -139,7 +158,13 @@ color: white;
   justify-content:space-around;
   align-items:center;
   background-color:#AEADB0;
-  width: 80%;
+  width: 85%;
+}
+.card_title_container{
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 2rem;
 }
 
 .card_detail{
@@ -151,16 +176,10 @@ color: white;
   flex-direction: column;
   color:#333333;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1rem;
+  letter-spacing: 0.08em;
   text-align: end;
-
-}
-
-.card_title_container{
-  margin: 50px;
-  font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -195,28 +214,6 @@ color: white;
   text-align: center;
   margin: 5px;
   color: #333333;
-}
-
-.contenedor_cart{
-  background-color: white;
-  height: 4rem;
-}
-
-.contenedor_carrito{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: end;
-  align-items: center;
-}
-
-.btnCart {
-  margin: 15px;
-  background-color: white;
-}
-
-.btnCart:hover {
-  background-color: #AEADB0;
 }
 
 .seccion_profile{
@@ -330,7 +327,6 @@ color: white;
     margin:15px;
   }
 
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -340,7 +336,6 @@ color: white;
     flex-direction: column;
     justify-content: center;
   }
-
 
   .profile_foto {
     margin-top: 30px;
@@ -361,6 +356,7 @@ color: white;
   .counter{
     margin: 20px;
     margin-bottom: 80px;
+    align-self: center;
   }
 
 }

@@ -6,11 +6,11 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    getProductById("1")
+    getProductById("10")
       .then((response) => {
         setProduct(response);
       })
-      .catch((error) => console.error(error, "Product not found"));
+      .catch((error) => console.error(error));
   }, []);
 
   return <ItemDetail {...product} />;
