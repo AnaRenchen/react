@@ -1,11 +1,9 @@
-import "./App.css";
 import Header from "../src/assets/components/Header";
 import Footer from "../src/assets/components/Footer";
 import SeccionProfile from "../src/assets/components/SeccionProfile";
 import SeccionContacto from "../src/assets/components/SeccionContacto";
 import ItemListContainer from "./assets/components/ItemListContainer";
 import ItemDetailContainer from "./assets/components/ItemDetailContainer";
-import Flecha from "./assets/components/Flecha";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error404 from "./assets/components/Error404";
 
