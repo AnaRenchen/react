@@ -1,13 +1,16 @@
 import LogoHeader from "../imagenes/logo_antiguo.jpeg";
+import { Link } from "react-router-dom";
 
 const Logo = ({ size }) => {
   return (
-    <img
-      className="image-fluid logo"
-      width={size}
-      src={LogoHeader}
-      alt="logo NavBar"
-    />
+    <Link to={"/"}>
+      <img
+        className="image-fluid logo"
+        width={size}
+        src={LogoHeader}
+        alt="logo NavBar"
+      />
+    </Link>
   );
 };
 

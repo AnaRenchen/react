@@ -14,7 +14,7 @@ const Profile = () => {
         but also imparting his own vision of tattooing, according to his studies
         both from research in books, as well as from his trips to Japan.
       </p>
-      <img className="profile_foto" src={FotoProfile} alt="" />
+      <img className="profile_foto" src={FotoProfile} alt="Foto Profile" />
     </div>
   );
 };

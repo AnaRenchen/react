@@ -131,8 +131,8 @@ body {
   width: 18em;
   margin: 50px;
   font-family: 'Times New Roman', Times, serif;
-  border: solid 2px #828084;
-  border-radius: 7px;
+  border: none !important;
+  border-radius: none !important;
   color: #333333;
   text-align: center;
 }
@@ -142,13 +142,17 @@ body {
 }
 
 .btn_shop{
-  background-color: #696e8d;
-  color: white;
+  background-color: white ;
+  color: #2a305c;
+  border: 2px solid #2a305c;
   width: 100px;
+  border-radius: 0;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .btn_shop:hover{
-background-color: #828084;
+background-color: #2a305c;
 color: white;
 }
 
@@ -157,7 +161,6 @@ color: white;
   flex-wrap: wrap;
   justify-content:space-around;
   align-items:center;
-  background-color:#AEADB0;
   width: 85%;
 }
 .card_title_container{
@@ -200,12 +203,13 @@ color: white;
 }
 
 .btn_cantidad{
-  background-color: #696e8d;
-  color: white;
+  background-color: white;
+  color: #2a305c;
+  border-radius: 0 !important;
 }
 
 .btn_cantidad:hover{
-  background-color: #828084;
+  background-color: #2a305c;
   color: white;
   }
 
@@ -222,6 +226,7 @@ color: white;
   height: auto;
   padding-top: 10px;
   padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .contendor_profile{
@@ -254,18 +259,16 @@ color: white;
 .contact{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 150px;
   margin-bottom: 150px;
   margin-left: 80px;
   margin-right: 80px;
+  min-height: 45vh;
 }
-
 
 .contact_info{
     width: 450px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .text_contact{
@@ -296,7 +299,7 @@ color: white;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: #3f446c;
+  background-color: #2a305c;
   margin-top: 20px;
 }
 
@@ -316,6 +319,10 @@ color: white;
   margin: 20px;
 }
 
+.texto_error{
+  font-family: monospace;
+}
+
 @media (max-width: 905px) {
 
   .contact{
@@ -328,6 +335,7 @@ color: white;
   }
 
 }
+
 
 @media only screen and (max-width: 1024px) {
 

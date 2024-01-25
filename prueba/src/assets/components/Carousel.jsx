@@ -21,19 +21,27 @@ const Carousel = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={KintaroKoi} className="d-block w-100" alt="..." />
+            <img
+              src={KintaroKoi}
+              className="d-block w-100"
+              alt="Kintaro y Koi"
+            />
           </div>
           <div className="carousel-item">
-            <img src={Orochimaru} className="d-block w-100" alt="..." />
+            <img src={Orochimaru} className="d-block w-100" alt="Orochimaru" />
           </div>
           <div className="carousel-item">
-            <img src={Fenix} className="d-block w-100" alt="..." />
+            <img src={Fenix} className="d-block w-100" alt="Fenix" />
           </div>
           <div className="carousel-item">
-            <img src={Sunade} className="d-block w-100" alt="..." />
+            <img src={Sunade} className="d-block w-100" alt="Tsunade" />
           </div>
           <div className="carousel-item">
-            <img src={MascaraPelos} className="d-block w-100" alt="..." />
+            <img
+              src={MascaraPelos}
+              className="d-block w-100"
+              alt="Casco y Hime"
+            />
           </div>
         </div>
         <button

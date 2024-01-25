@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Logo from "../components/Logo";
 
 const NavBar = () => {
@@ -5,9 +6,9 @@ const NavBar = () => {
     <div>
       <nav className="navbar navbar-expand-md">
         <div className="container">
-          <a className="navbar-brand" href="./index.html">
+          <div className="navbar-brand">
             <Logo size={30} />
-          </a>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,42 +23,48 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item dropdown">
-                <a
+                <NavLink
                   className="nav-link dropdown-toggle"
-                  href="#shop"
+                  to={" / "}
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Shop
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#shop">
+                    <NavLink className="dropdown-item" to={"/"}>
                       All Paintings
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#shop">
+                    <NavLink
+                      className="dropdown-item"
+                      to={"/category/Characters"}
+                    >
                       - Characters
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#shop">
+                    <NavLink
+                      className="dropdown-item"
+                      to={"/category/Nature and Mythological Animals"}
+                    >
                       - Nature and Mythological Animals
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#profile">
+                <NavLink className="nav-link" to={"/profile"}>
                   Profile
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contacto">
+                <NavLink className="nav-link" to={"/contact"}>
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

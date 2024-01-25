@@ -7,11 +7,7 @@ const SeccionContacto = () => {
   return (
     <div className="contact">
       <div className="contact_info">
-        <Subtitulo
-          contenido={"Contact Information"}
-          color={colorSubtitulo}
-          id="contacto"
-        />
+        <Subtitulo contenido={"Contact Information"} color={colorSubtitulo} />
         <p className="text_contact">
           If you have any questions or wish to get a tattoo, send us an email:
           santu.vegan@hotmail.com
