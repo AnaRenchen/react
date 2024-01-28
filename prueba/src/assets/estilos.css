@@ -161,8 +161,11 @@ color: white;
   flex-wrap: wrap;
   justify-content:space-around;
   align-items:center;
-  width: 85%;
+  min-height: 80vh;
 }
+
+
+
 .card_title_container{
   text-align: center;
   font-size: 2rem;
@@ -174,6 +177,10 @@ color: white;
   margin: 5rem;
 }
 
+.imagen_detail{
+  width: 350px;
+}
+
 .card_body_detail{
   display: flex;
   flex-direction: column;
@@ -183,6 +190,16 @@ color: white;
   line-height: 1rem;
   letter-spacing: 0.08em;
   text-align: end;
+}
+
+.image_detail{
+  width: 25rem;
+}
+
+.descripcion_detail{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 
@@ -321,6 +338,17 @@ color: white;
 
 .texto_error{
   font-family: monospace;
+}
+
+.container_error{
+  height: 70vh;
+}
+
+@media (max-width: 520px){
+
+  .image_detail{
+    width: 100%;
+  }
 }
 
 @media (max-width: 905px) {

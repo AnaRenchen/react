@@ -3,7 +3,7 @@ import Trex from "../imagenes/trex.png";
 
 const Error404 = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5 container_error">
       <div className="row">
         <div className="col text-center">
           <img className="fs-5" src={Trex} width={100} alt="" />
