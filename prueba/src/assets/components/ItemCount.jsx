@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-const ItemCount = ({ stock, initial }) => {
+const ItemCount = ({ stock, initial, onAdd }) => {
   const [cantidad, setCantidad] = useState(initial);
   const [itemStock, setItemStock] = useState(stock);
 
@@ -15,10 +15,11 @@ const ItemCount = ({ stock, initial }) => {
     }
   };
 
-  const onAdd = () => {
+  const onAddClick = () => {
     if (cantidad <= itemStock) {
       setItemStock(itemStock - cantidad);
       setCantidad(initial);
+      onAdd();
       console.log(
         `You added ${cantidad} products to cart. Now there are ${
           itemStock - cantidad
@@ -54,7 +55,7 @@ const ItemCount = ({ stock, initial }) => {
           +
         </button>
       </div>
-      <button className="btn btn_shop" onClick={onAdd} disabled={!stock}>
+      <button className="btn btn_shop" disabled={!stock} onClick={onAddClick}>
         Shop
       </button>
     </div>

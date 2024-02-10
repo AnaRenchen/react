@@ -3,11 +3,14 @@ import LogoDireccion from "../imagenes/dire_grande.png";
 import Subtitulo from "../components/Subtitulo";
 
 const SeccionContacto = () => {
-  const colorSubtitulo = "#333333";
   return (
     <div className="contact">
       <div className="contact_info">
-        <Subtitulo contenido={"Contact Information"} color={colorSubtitulo} />
+        <Subtitulo
+          contenido={"Contact Information"}
+          condicion={false}
+          condicion2={false}
+        />
         <p className="text_contact">
           If you have any questions or wish to get a tattoo, send us an email:
           santu.vegan@hotmail.com

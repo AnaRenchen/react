@@ -4,7 +4,7 @@
     "name": "Orochimaru 大蛇丸",
     "price": 300,
     "category": "Characters",
-    "img": "../src/assets/imagenes/orochimaru.jpg",
+    "img": "https://i.postimg.cc/y81x3KTR/orochimaru.jpg",
     "stock": 5,
     "description": "Original Painting A3 Size"
   },
@@ -13,7 +13,7 @@
     "name": "Kintaro to Koi 金太郎と鯉",
     "price": 450,
     "category": "Characters",
-    "img": "../src/assets/imagenes/kintaro_koi.jpg",
+    "img": "https://i.postimg.cc/5ttXTJYJ/kintaro-koi.jpg",
     "stock": 2,
     "description": "Original Painting A3 Size"
   },
@@ -22,7 +22,7 @@
     "name": "Tsunade 綱手",
     "price": 300,
     "category": "Characters",
-    "img": "../src/assets/imagenes/sunade.jpg",
+    "img": "https://i.postimg.cc/dV518fWx/sunade.jpg",
     "stock": 5,
     "description": "Original Painting A3 Size"
   },
@@ -31,7 +31,7 @@
     "name": "Kiyohime 清姫",
     "price": 380,
     "category": "Characters",
-    "img": "../src/assets/imagenes/mascara_pelos.jpg",
+    "img": "https://i.postimg.cc/YqfjS0Qk/mascara-pelos.jpg",
     "stock": 3,
     "description": "Original Painting A3 Size"
   },
@@ -40,7 +40,7 @@
     "name": "Danshichi Kurobei 団七九郎兵衛",
     "price": 500,
     "category": "Characters",
-    "img": "../src/assets/imagenes/samurai_agua.jpg",
+    "img": "https://i.postimg.cc/cJ6JTc24/samurai-agua.jpg",
     "stock": 1,
     "description": "Original Painting A3 Size"
   },
@@ -49,7 +49,7 @@
     "name": "Dakki no Ohyaku 妲己のお百",
     "price": 380,
     "category": "Characters",
-    "img": "../src/assets/imagenes/calavera.jpg",
+    "img": "https://i.postimg.cc/VNHJchnC/calavera.jpg",
     "stock": 3,
     "description": "Original Painting A3 Size"
   },
@@ -58,7 +58,7 @@
     "name": "Hou-oo 鳳凰",
     "price": 350,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/fenix.jpg",
+    "img": "https://i.postimg.cc/J4bHBPVf/fenix.jpg",
     "stock": 4,
     "description": "Original Painting A3 Size"
   },
@@ -67,7 +67,7 @@
     "name": "Kiku 菊",
     "price": 200,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/crisantemos.jpg",
+    "img": "https://i.postimg.cc/4dDnYh84/crisantemos.jpg",
     "stock": 5,
     "description": "Original Painting A3 Size"
   },
@@ -76,7 +76,7 @@
     "name": "Unryu 雲龍",
     "price": 280,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/dragon.jpg",
+    "img": "https://i.postimg.cc/W3Fhp7wf/dragon.jpg",
     "stock": 5,
     "description": "Original Painting A3 Size"
   },
@@ -85,7 +85,7 @@
     "name": "Karajishi 唐獅子",
     "price": 230,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/karajishi.jpg",
+    "img": "https://i.postimg.cc/dQCLz41h/karajishi.jpg",
     "stock": 3,
     "description": "Original Painting A3 Size"
   },
@@ -94,7 +94,7 @@
     "name": "Kitsune 狐",
     "price": 250,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/Kitsune.jpg",
+    "img": "https://i.postimg.cc/0yn6VjNZ/kitsune.jpg",
     "stock": 3,
     "description": "Original Painting A3 Size"
   },
@@ -103,7 +103,7 @@
     "name": "Kasha 火車",
     "price": 190,
     "category": "Nature and Mythological Animals",
-    "img": "../src/assets/imagenes/gato.jpg",
+    "img": "https://i.postimg.cc/cCfCw4jR/gato.jpg",
     "stock": 5,
     "description": "Original Painting A3 Size"
   }

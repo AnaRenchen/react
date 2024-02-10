@@ -7,8 +7,6 @@ import { useParams } from "react-router-dom";
 import Flecha from "./Flecha";
 
 const ItemListContainer = () => {
-  const colorSubtitulo = "#333333";
-
   const [products, setProducts] = useState([]);
   const { id } = useParams();
 
@@ -32,7 +30,8 @@ const ItemListContainer = () => {
       {id ? "" : <Carousel />}
       <Subtitulo
         contenido={"Shop for Original Paintings"}
-        color={colorSubtitulo}
+        condicion={false}
+        condicion2={false}
       />
       <ItemList products={products} />
       {id ? "" : <Flecha />}

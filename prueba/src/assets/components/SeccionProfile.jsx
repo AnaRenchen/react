@@ -2,10 +2,9 @@ import Subtitulo from "../components/Subtitulo";
 import Profile from "../components/Profile";
 
 const SeccionProfile = () => {
-  const colorSubtitulo = "#ffffff";
   return (
     <div className="seccion_profile">
-      <Subtitulo color={colorSubtitulo} contenido={"Profile"} />
+      <Subtitulo contenido={"Profile"} condicion={true} condicion2={true} />
       <Profile />
     </div>
   );
