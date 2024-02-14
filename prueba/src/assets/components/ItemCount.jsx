@@ -19,7 +19,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
     if (cantidad <= itemStock) {
       setItemStock(itemStock - cantidad);
       setCantidad(initial);
-      onAdd();
+      onAdd(cantidad);
       console.log(
         `You added ${cantidad} products to cart. Now there are ${
           itemStock - cantidad

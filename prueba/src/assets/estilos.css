@@ -60,7 +60,7 @@ body {
 }
 
 .btnCart:hover {
-  background-color: #AEADB0;
+  background-color: #abaebf;
 }
 
 .contenedor_titulo{
@@ -135,6 +135,7 @@ body {
   border-radius: none !important;
   color: #333333;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .card-title{
@@ -156,6 +157,7 @@ background-color: #2a305c;
 color: white;
 }
 
+
 .detail_container{
   display: flex;
   flex-wrap: wrap;
@@ -163,8 +165,6 @@ color: white;
   align-items:center;
   min-height: 80vh;
 }
-
-
 
 .card_title_container{
   text-align: center;
@@ -202,7 +202,6 @@ color: white;
   text-overflow: ellipsis;
 }
 
-
 .counter{
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +235,160 @@ color: white;
   margin: 5px;
   color: #333333;
 }
+
+.cart_container{
+  min-height: 70vh;
+}
+
+.cart_btn_container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.btn_clear{
+  background-color: white ;
+  color: #2a305c;
+  border: 2px solid #2a305c;
+  width: 120px;
+  border-radius: 0;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.btn_clear:hover{
+  background-color: #2a305c;
+  color: white;
+  }
+
+.btn_checkout{
+  background-color: white ;
+  color: #2a305c;
+  border: 2px solid #2a305c;
+  width: 220px;
+  border-radius: 0;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.btn_checkout:hover{
+  background-color: #2a305c;
+  color: white;
+  }
+  
+  .cart_btn_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+  }
+
+  .btn_clear{
+    background-color: white ;
+    color: #2a305c;
+    border: 2px solid #2a305c;
+    width: 120px;
+    border-radius: 0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+  }
+  
+  .btn_clear:hover{
+    background-color: #2a305c;
+    color: white;
+    }
+  
+  .btn_checkout{
+    background-color: white ;
+    color: #2a305c;
+    border: 2px solid #2a305c;
+    width: 220px;
+    border-radius: 0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+  }
+  
+  .btn_checkout:hover{
+    background-color: #2a305c;
+    color: white;
+    }
+  
+  .total{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    color: #333333;
+    margin-bottom: 50px;
+  }
+
+  .producto_cart_name{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333333;
+    letter-spacing: 0.1em;
+  }
+
+  .subtotal{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    color: #333333;
+  }
+
+  .cart_item_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color:#abaebf;
+    margin: 50px;
+    height: 100px;
+  }
+
+  .trash{
+    background-color: #abaebf;
+    border: none;
+  }
+
+  .container_cart_vacio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   align-items: center;
+   min-height: 75vh;
+  }
+
+  .cart_vacio{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333333;
+    margin: 20px;
+  }
+
+  .btn_paintings{
+    background-color: white ;
+    width: 220px;
+    border-radius: 0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+  }
+  
+  .btn_paintings:hover{
+    background-color: #2a305c;
+    color: white;
+    }
 
 .seccion_profile{
   margin-top: 100px;
@@ -364,7 +517,6 @@ color: white;
 
 }
 
-
 @media only screen and (max-width: 1024px) {
 
   .contendor_profile {
@@ -393,6 +545,13 @@ color: white;
     margin: 20px;
     margin-bottom: 80px;
     align-self: center;
+  }
+
+  .cart_item_container{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
 
 }
