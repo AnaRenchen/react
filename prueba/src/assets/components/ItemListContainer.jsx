@@ -1,16 +1,25 @@
 import { useState, useEffect } from "react";
-import arrayProductos from "../components/json/productos.json";
+/*import arrayProductos from "../components/json/productos.json";*/
 import Subtitulo from "./Subtitulo";
 import ItemList from "./ItemList";
 import Carousel from "./Carousel";
 import { useParams } from "react-router-dom";
 import Flecha from "./Flecha";
+import Loading from "./Loading";
+import {
+  getFirestore,
+  collection,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
 
-  useEffect(() => {
+  /* useEffect(() => {
     const promesa = new Promise((resolve) => {
       setTimeout(() => {
         resolve(
@@ -21,7 +30,26 @@ const ItemListContainer = () => {
       }, 2000);
     });
     promesa.then((data) => {
+      setLoading(false);
       setProducts(data);
+    });
+  }, [id]);*/
+
+  useEffect(() => {
+    const db = getFirestore();
+    const productsCollection = collection(db, "products");
+
+    const q = id
+      ? query(productsCollection, where("category", "==", id))
+      : productsCollection;
+    getDocs(q).then((resultado) => {
+      setLoading(false);
+      setProducts(
+        resultado.docs.map((producto) => ({
+          id: producto.id,
+          ...producto.data(),
+        }))
+      );
     });
   }, [id]);
 
@@ -33,7 +61,7 @@ const ItemListContainer = () => {
         condicion={false}
         condicion2={false}
       />
-      <ItemList products={products} />
+      {loading ? <Loading /> : <ItemList products={products} />}
       {id ? "" : <Flecha />}
     </div>
   );

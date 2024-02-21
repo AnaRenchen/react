@@ -9,16 +9,16 @@ const CartWidget = () => {
   return (
     <div className="contenedor_cart">
       <div className="contenedor_carrito">
-        <Link
-          to="/cart"
-          className="btn  position-relative btnCart"
-          style={{ display: totalQuantity() > 0 ? "block" : "none" }}
-        >
-          <img className="carrito" src={Cart} alt="Carrito" width={25} />
-          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-            {totalQuantity()}
-          </span>
-        </Link>
+        {totalQuantity() > 0 ? (
+          <Link to="/cart" className="btn  position-relative btnCart">
+            <img className="carrito" src={Cart} alt="Carrito" width={25} />
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {totalQuantity()}
+            </span>
+          </Link>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

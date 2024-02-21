@@ -10,10 +10,12 @@ const CartContextProvider = ({ children }) => {
   console.log(cart);
 
   const addItem = (item, cantidad) => {
-    if (!isInCart(item.id)) {
-      setCart((prev) => [...prev, { ...item, cantidad }]);
+    if (isInCart(item.id)) {
+      let position = cart.findIndex((prod) => prod.id === item.id);
+      cart[position].cantidad += cantidad;
+      setCart([...cart]);
     } else {
-      console.error("The product has already been added to Cart");
+      setCart([...cart, { ...item, cantidad: cantidad }]);
     }
   };
 
@@ -37,16 +39,14 @@ const CartContextProvider = ({ children }) => {
   };
 
   const calcularTotal = () => {
-    return cart.reduce((total, item) => total + item.price * item.cantidad, 0);
-  };
-
-  const calcularSubtotal = (itemId) => {
-    const item = cart.find((prod) => prod.id === itemId);
-    return item ? item.price * item.cantidad : 0;
+    return cart.reduce(
+      (total, item) => (total += item.price * item.cantidad),
+      0
+    );
   };
 
   const totalQuantity = () => {
-    return cart.reduce((total, item) => total + item.cantidad, 0);
+    return cart.reduce((total, item) => (total += item.cantidad), 0);
   };
 
   return (
@@ -57,7 +57,6 @@ const CartContextProvider = ({ children }) => {
         removeItem,
         clearCart,
         calcularTotal,
-        calcularSubtotal,
         totalQuantity,
       }}
     >
