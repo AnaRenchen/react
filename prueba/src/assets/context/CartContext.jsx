@@ -7,8 +7,6 @@ export const CartContext = createContext({
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  console.log(cart);
-
   const addItem = (item, cantidad) => {
     if (isInCart(item.id)) {
       let position = cart.findIndex((prod) => prod.id === item.id);

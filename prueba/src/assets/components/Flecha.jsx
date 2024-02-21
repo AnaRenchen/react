@@ -7,7 +7,7 @@ const Flecha = () => {
   };
   return (
     <div className="flecha">
-      <Link to={"/#top"} onClick={haciaArriba}>
+      <Link to={"/"} onClick={haciaArriba}>
         <img className="logo_flecha" src={FlechaLogo} alt="logoFlecha" />
       </Link>
     </div>

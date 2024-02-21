@@ -177,9 +177,10 @@ color: white;
   margin: 5rem;
 }
 
-.imagen_detail{
-  width: 350px;
+.image_detail{
+  width: 25rem;
 }
+
 
 .card_body_detail{
   display: flex;
@@ -190,10 +191,6 @@ color: white;
   line-height: 1rem;
   letter-spacing: 0.08em;
   text-align: end;
-}
-
-.image_detail{
-  width: 25rem;
 }
 
 .descripcion_detail{
@@ -386,6 +383,10 @@ color: white;
   margin: 50px;
 }
 
+.checkout_container{
+  min-height: 80vh;
+}
+
 .seccion_profile{
   margin-top: 100px;
   background-color:#3f446c;
@@ -493,6 +494,8 @@ color: white;
   height: 70vh;
 }
 
+
+
 @media (max-width: 520px){
 
   .image_detail{
@@ -509,6 +512,10 @@ color: white;
 
   .logos{
     margin:15px;
+  }
+
+  .form_container{
+    margin-bottom: 80px;
   }
 
 }
@@ -550,5 +557,8 @@ color: white;
     text-align: center;
   }
  
+  .card_body_detail{
+    text-align: center;
+  }
 
 }

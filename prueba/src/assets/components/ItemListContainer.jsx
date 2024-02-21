@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-/*import arrayProductos from "../components/json/productos.json";*/
 import Subtitulo from "./Subtitulo";
 import ItemList from "./ItemList";
 import Carousel from "./Carousel";
@@ -18,22 +17,6 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-
-  /* useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(
-          id
-            ? arrayProductos.filter((product) => product.category === id)
-            : arrayProductos
-        );
-      }, 2000);
-    });
-    promesa.then((data) => {
-      setLoading(false);
-      setProducts(data);
-    });
-  }, [id]);*/
 
   useEffect(() => {
     const db = getFirestore();

@@ -6,14 +6,14 @@ const Checkout = () => {
   const { cart, calcularTotal } = useContext(CartContext);
 
   return (
-    <div className="container">
+    <div className="container checkout_container">
       <div className="row">
         <div className="col text-center">
           <h1 className="checkout_title">Checkout</h1>
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 form_container">
           <Formulario />
         </div>
         <div className="col-md-6 text-center">

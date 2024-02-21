@@ -1,14 +1,29 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+import Foot from "../imagenes/foot.png";
 
 const Formulario = () => {
   const { cart, clearCart, calcularTotal } = useContext(CartContext);
 
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [telephone, setTelephone] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [telephone, setTelephone] = useState("");
   const [orderId, setOrderId] = useState();
+
+  useEffect(() => {
+    if (orderId) {
+      Swal.fire({
+        title: "Thank you for your purchase!",
+        text: `Your order ID is: ${orderId}`,
+        color: "#333333",
+        background: "white",
+        imageUrl: `${Foot}`,
+        confirmButtonColor: "#2a305c",
+      });
+    }
+  }, [orderId]);
 
   const generateOrder = () => {
     if (name.length === 0) {
@@ -30,9 +45,9 @@ const Formulario = () => {
       price: product.price,
     }));
     const fecha = new Date();
-    const date = `${fecha.getDate()}-${
+    const date = `${fecha.getDate()}/${
       fecha.getMonth() + 1
-    }-${fecha.getFullYear()}, ${fecha.getHours()}:${fecha.getMinutes()}`;
+    }/${fecha.getFullYear()}, ${fecha.getHours()}:${fecha.getMinutes()}`;
     const total = calcularTotal();
     const order = {
       buyer: buyer,

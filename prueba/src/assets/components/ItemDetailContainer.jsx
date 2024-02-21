@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-/*import arrayProductos from "./json/productos.json";*/
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Loading from "./Loading";
@@ -9,22 +8,6 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-
-  /*useEffect(() => {
-    const promesa = new Promise((resolve) => {
-      setTimeout(() => {
-        let item = arrayProductos.find(
-          (product) => product.id === parseInt(id)
-        );
-        resolve(item);
-      }, 2000);
-    });
-    promesa.then((data) => {
-      setLoading(false);
-      setProduct(data);
-      console.log(data);
-    });
-  }, [id]);*/
 
   useEffect(() => {
     const db = getFirestore();

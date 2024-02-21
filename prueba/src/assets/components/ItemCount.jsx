@@ -23,13 +23,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       setCantidad(initial);
       onAdd(cantidad);
       setGoCart(true);
-      console.log(
-        `You added ${cantidad} products to cart. Now there are ${
-          itemStock - cantidad
-        } products available.`
-      );
     } else {
-      console.log("No products available.");
       setCantidad(initial);
     }
   };
