@@ -1,5 +1,4 @@
 import Instagram from "../imagenes/instagram_logo.png";
-import LogoDireccion from "../imagenes/dire_grande.png";
 import Subtitulo from "../components/Subtitulo";
 
 const SeccionContacto = () => {
@@ -21,7 +20,11 @@ const SeccionContacto = () => {
           <img className="logo_insta" src={Instagram} alt="logoInsta" />
         </a>
         <a href="https://maps.app.goo.gl/AhYJxdLQMR4zB7vF9" target="_blank">
-          <img className="logo_dire" src={LogoDireccion} alt="logoDire" />
+          <img
+            className="logo_dire"
+            src="https://i.postimg.cc/qRwwYVYF/dire-grande.png"
+            alt="logoDire"
+          />
         </a>
       </div>
     </div>

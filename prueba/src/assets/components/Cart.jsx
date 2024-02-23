@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
-import Cat from "../imagenes/cat.png";
 
 const Cart = () => {
   const { cart, clearCart, totalQuantity, calcularTotal } =
@@ -11,7 +10,7 @@ const Cart = () => {
   if (totalQuantity() === 0) {
     return (
       <div className="container_cart_vacio">
-        <img src={Cat} alt="" />
+        <img src="https://i.postimg.cc/ZqrV8yL4/cat.png" alt="cat" />
         <h1 className="cart_vacio"> Your cart is empty... </h1>
         <Link to="/" className="btn btn_paintings">
           See All Paintings

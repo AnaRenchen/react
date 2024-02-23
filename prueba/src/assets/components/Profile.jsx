@@ -1,5 +1,3 @@
-import FotoProfile from "../imagenes/profile_foto.jpeg";
-
 const Profile = () => {
   return (
     <div className="contendor_profile">
@@ -14,7 +12,11 @@ const Profile = () => {
         but also imparting his own vision of tattooing, according to his studies
         both from research in books, as well as from his trips to Japan.
       </p>
-      <img className="profile_foto" src={FotoProfile} alt="Foto Profile" />
+      <img
+        className="profile_foto"
+        src="https://i.postimg.cc/gcKdqmqP/profile-foto.jpg"
+        alt="Foto Profile"
+      />
     </div>
   );
 };

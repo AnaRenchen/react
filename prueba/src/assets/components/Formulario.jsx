@@ -2,7 +2,6 @@ import { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
-import Foot from "../imagenes/foot.png";
 
 const Formulario = () => {
   const { cart, clearCart, calcularTotal } = useContext(CartContext);
@@ -19,7 +18,7 @@ const Formulario = () => {
         text: `Your order ID is: ${orderId}`,
         color: "#333333",
         background: "white",
-        imageUrl: `${Foot}`,
+        imageUrl: "https://i.postimg.cc/hPz88dS6/foot.png",
         confirmButtonColor: "#2a305c",
       });
     }
