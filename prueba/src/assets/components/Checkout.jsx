@@ -9,7 +9,9 @@ const Checkout = () => {
     <div className="container checkout_container">
       <div className="row">
         <div className="col text-center">
-          <h1 className="checkout_title">Checkout</h1>
+          <h1 className="checkout_title" style={{ margin: 50 }}>
+            Checkout
+          </h1>
         </div>
       </div>
       <div className="row">

@@ -22,6 +22,13 @@ const Cart = () => {
 
   return (
     <div className="cart_container">
+      <div className="row">
+        <div className="col text-center">
+          <h1 className="checkout_title" style={{ marginTop: 30 }}>
+            Purchase Summary
+          </h1>
+        </div>
+      </div>
       {cart.map((product) => (
         <CartItem key={product.id} {...product} />
       ))}
