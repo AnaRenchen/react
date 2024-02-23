@@ -1,9 +1,4 @@
 import Titulo from "../components/Titulo";
-import KintaroKoi from "../imagenes/kintaro_koi.jpg";
-import Fenix from "../imagenes/fenix.jpg";
-import Orochimaru from "../imagenes/orochimaru.jpg";
-import MascaraPelos from "../imagenes/mascara_pelos.jpg";
-import Sunade from "../imagenes/sunade.jpg";
 import Greeting from "./Greeting";
 
 const Carousel = () => {
@@ -22,23 +17,35 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src={KintaroKoi}
+              src="https://i.postimg.cc/5ttXTJYJ/kintaro-koi.jpg"
               className="d-block w-100"
               alt="Kintaro y Koi"
             />
           </div>
           <div className="carousel-item">
-            <img src={Orochimaru} className="d-block w-100" alt="Orochimaru" />
-          </div>
-          <div className="carousel-item">
-            <img src={Fenix} className="d-block w-100" alt="Fenix" />
-          </div>
-          <div className="carousel-item">
-            <img src={Sunade} className="d-block w-100" alt="Tsunade" />
+            <img
+              src="https://i.postimg.cc/y81x3KTR/orochimaru.jpg"
+              className="d-block w-100"
+              alt="Orochimaru"
+            />
           </div>
           <div className="carousel-item">
             <img
-              src={MascaraPelos}
+              src="https://i.postimg.cc/J4bHBPVf/fenix.jpg"
+              className="d-block w-100"
+              alt="Fenix"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://i.postimg.cc/dV518fWx/sunade.jpg"
+              className="d-block w-100"
+              alt="Tsunade"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="https://i.postimg.cc/YqfjS0Qk/mascara-pelos.jpg"
               className="d-block w-100"
               alt="Casco y Hime"
             />
