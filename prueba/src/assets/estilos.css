@@ -506,15 +506,28 @@ body {
   .contact{
     justify-content: center;
     text-align: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
+
   .logos{
-    margin:15px;
+   margin: 20px;
   }
 
   .form_container{
     margin-bottom: 80px;
   }
+
+  .btn_shop{
+    width: 150px;
+  }
+
+  .btn_goCart{
+    width: 180px;
+  }
+ 
 
 }
 
