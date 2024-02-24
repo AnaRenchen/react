@@ -1,4 +1,4 @@
-import Titulo from "../components/Titulo";
+import Titulo from "./Titulo";
 import Greeting from "./Greeting";
 
 const Carousel = () => {

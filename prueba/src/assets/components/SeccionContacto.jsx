@@ -1,4 +1,4 @@
-import Subtitulo from "../components/Subtitulo";
+import Subtitulo from "./Subtitulo";
 
 const SeccionContacto = () => {
   return (

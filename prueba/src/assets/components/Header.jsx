@@ -1,5 +1,5 @@
-import NavBar from "../components/NavBar";
-import CartWidget from "../components/CartWidget";
+import NavBar from "./NavBar";
+import CartWidget from "./CartWidget";
 
 const Header = () => {
   return (

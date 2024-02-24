@@ -1,5 +1,5 @@
-import Subtitulo from "../components/Subtitulo";
-import Profile from "../components/Profile";
+import Subtitulo from "./Subtitulo";
+import Profile from "./Profile";
 
 const SeccionProfile = () => {
   return (
