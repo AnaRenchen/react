@@ -25,16 +25,14 @@ const Formulario = () => {
   }, [orderId]);
 
   const generateOrder = () => {
-    if (name.length === 0) {
-      return false;
-    }
-
-    if (email.length === 0) {
-      return false;
-    }
-
-    if (telephone.length === 0) {
-      return false;
+    if (name.length === 0 || email.length === 0 || telephone.length === 0) {
+      Swal.fire({
+        text: "Please complete all fields before submitting your order.",
+        icon: "error",
+        confirmButtonColor: "#2a305c",
+        toast: "true",
+      });
+      return;
     }
 
     const buyer = { name: name, email: email, phone: telephone };
